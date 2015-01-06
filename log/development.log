@@ -1,0 +1,139 @@
+
+
+Started GET "/" for ::1 at 2015-01-02 12:56:09 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (18.0ms)
+Completed 200 OK in 124ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (92.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (12.0ms)[0m  select sqlite_version(*)
+  [1m[36m (84.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateStatuses (20150102175704)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "statuses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "content" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150102175704"]]
+  [1m[35m (108.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2015-01-06 10:17:14 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (18.0ms)
+Completed 200 OK in 123ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2015-01-06 10:19:36 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-01-06 10:19:38 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2015-01-06 10:20:20 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 43ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses" for ::1 at 2015-01-06 10:20:38 -0500
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (1.0ms)[0m  SELECT "statuses".* FROM "statuses"
+  Rendered statuses/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1013ms (Views: 1008.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/statuses-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-06 10:20:39 -0500
+
+
+Started GET "/assets/scaffolds-6f9a98527d930f4cc94cbd8ae312033c.css?body=1" for ::1 at 2015-01-06 10:20:39 -0500
+
+
+Started GET "/assets/application-d3a54356e50be5df82d1e081681bb749.css?body=1" for ::1 at 2015-01-06 10:20:39 -0500
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-06 10:20:39 -0500
+
+
+Started GET "/assets/statuses-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-06 10:20:39 -0500
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-06 10:20:39 -0500
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-06 10:20:39 -0500
+
+
+Started GET "/assets/application-9d71a2f6dda6b569ca80f60714aabe8b.js?body=1" for ::1 at 2015-01-06 10:20:39 -0500
+
+
+Started GET "/statuses/new" for ::1 at 2015-01-06 10:20:49 -0500
+Processing by StatusesController#new as HTML
+  Rendered statuses/_form.html.erb (166.0ms)
+  Rendered statuses/new.html.erb within layouts/application (188.0ms)
+Completed 200 OK in 248ms (Views: 243.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/statuses" for ::1 at 2015-01-06 10:21:00 -0500
+Processing by StatusesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bplfcJQ27L/kXZlIVMVSlAFxc01FGLeQNCEQhhMDzPmjWr3pP2fTIbzC8VSNdwb9L8XvGPBQs+7bmk9GfJ0j6w==", "status"=>{"name"=>"Matt", "content"=>"I'm on Treebook\r\n"}, "commit"=>"Create Status"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "statuses" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Matt"], ["content", "I'm on Treebook\r\n"], ["created_at", "2015-01-06 15:21:00.688549"], ["updated_at", "2015-01-06 15:21:00.688549"]]
+  [1m[36m (104.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/statuses/1
+Completed 302 Found in 145ms (ActiveRecord: 106.0ms)
+
+
+Started GET "/statuses/1" for ::1 at 2015-01-06 10:21:00 -0500
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStatus Load (1.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered statuses/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 135ms (Views: 47.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/statuses/1/edit" for ::1 at 2015-01-06 10:21:07 -0500
+Processing by StatusesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered statuses/_form.html.erb (2.0ms)
+  Rendered statuses/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 67ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/statuses/1" for ::1 at 2015-01-06 10:21:12 -0500
+Processing by StatusesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JzTJAFfe3G0yEOnUL0IdzljrFo8ciSQB8hGXr/8NJVjq9yuZ/I/j82qPgcj28Emndl+K2qnBIH8dqshvkJPKSg==", "status"=>{"name"=>"Matt", "content"=>"I'm still on Treebook\r\n"}, "commit"=>"Update Status", "id"=>"1"}
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  UPDATE "statuses" SET "content" = ?, "updated_at" = ? WHERE "statuses"."id" = ?  [["content", "I'm still on Treebook\r\n"], ["updated_at", "2015-01-06 15:21:12.437724"], ["id", 1]]
+  [1m[36m (144.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/statuses/1
+Completed 302 Found in 153ms (ActiveRecord: 144.0ms)
+
+
+Started GET "/statuses/1" for ::1 at 2015-01-06 10:21:12 -0500
+Processing by StatusesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStatus Load (0.0ms)[0m  SELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered statuses/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/statuses" for ::1 at 2015-01-06 10:21:13 -0500
+Processing by StatusesController#index as HTML
+  [1m[36mStatus Load (0.0ms)[0m  [1mSELECT "statuses".* FROM "statuses"[0m
+  Rendered statuses/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.0ms)
